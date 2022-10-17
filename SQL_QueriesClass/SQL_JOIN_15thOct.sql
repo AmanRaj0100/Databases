@@ -20,7 +20,7 @@ SELECT e.first_name,e.last_name, e.salary,d.department_name, l.city
 FROM employees e 
 JOIN	departments d
 ON e.department_id=d.department_id		--Multiple JOINs can be used like this. 
-JOIN	locations l						--If "n" Table needs to be joined the "(n-1)" JOIN clauses must be used
+JOIN	locations l						--If "n" Table needs to be joined then "(n-1)" JOIN clauses must be used
 ON l.location_id=d.location_id;
 
 SELECT e.first_name,e.last_name, e.salary,d.department_name, l.city
